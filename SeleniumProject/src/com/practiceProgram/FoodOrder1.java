@@ -31,7 +31,7 @@ public class FoodOrder1 {
 			System.out.println("Invalid Input");
 		
 
-		GST=price/GST;
+		GST=(price*GST)/100;
 		totalPrice=GST+price;	
 		System.out.println("\nItem"+"\t\t"+item+" Price"+"\t\t"+"GST 18%"+"\t\t"+"Total Price");
 		System.out.println(item+"\t\t\t"+price+"\t\t"+GST+"\t\t"+totalPrice+"\n");

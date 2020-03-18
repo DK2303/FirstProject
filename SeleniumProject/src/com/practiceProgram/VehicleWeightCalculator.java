@@ -28,10 +28,10 @@ public class VehicleWeightCalculator {
 			System.out.println("Invalid Input");
 		
 
-		GST=price/GST;
+		GST=(price*GST)/100;
 		totalPrice=GST+price;	
 		System.out.println("\nWeight"+"\t\t"+" Price"+"\t\t"+"GST 18%"+"\t\t"+"Total Price");
-		System.out.println(weight+"\t\t  "+price+"\t\t"+GST+"\t"+totalPrice+"\n");
+		System.out.println(weight+"\t\t  "+price+"\t\t"+GST+"\t\t"+totalPrice+"\n");
 	}
 		
 	public static void main(String[] args) {
